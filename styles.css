@@ -101,6 +101,7 @@
     left: -100%;
     opacity: 0;
     transition: all 0.5s ease;
+    z-index: 50;
   }
 
   #name {
@@ -188,7 +189,7 @@
 
 .profile {
     position: absolute;
-    width: 24rem;
+    width: 22rem;
     border-radius: 50%;
     margin: 50px 50px 0px 60px;
 }
