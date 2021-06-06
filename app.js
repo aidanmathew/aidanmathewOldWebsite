@@ -45,7 +45,7 @@ new TypeIt("#type1", {
   .type("a Problem Solver.", { delay: 400 })
   .pause(1000)
   .delete()
-  .type("an Analytical Thinker", { delay: 400 })
+  .type("an Analytical Thinker.", { delay: 400 })
   .pause(1000)
   .delete()
   .go();
