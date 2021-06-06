@@ -225,7 +225,7 @@
 
   #mobile-menu {
     position: absolute;
-    top: 30%;
+    top: 1.5rem;
     right: 5%;
     transform: translate(5% 30%);
   }
@@ -259,4 +259,14 @@
   top: 0;
   display: block;
   transition: top 0.3s;
+}
+
+.subtitle {
+  font-size: 1.6rem;
+}
+
+.banner .subtitle span {
+  color: var(--accent1);
+  padding-bottom: 0.05rem;
+  border-bottom: 1px solid var(--accent1);
 }
