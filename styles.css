@@ -17,7 +17,6 @@
 .nav-container {
   width: 100%;
   background-color: var(--mainbackground);
-  position: fixed;
   top: 0;
   display: block;
   transition: top 0.3s;
@@ -63,7 +62,7 @@
   transform: scaleX(1);
 }
 
-.name:hover{
+.name:hover {
   color: var(--textcolor);
   transition: all 0.2s ease-out;
 }
@@ -102,7 +101,7 @@
   transform: scaleX(1);
 }
 
-.nav-links:hover{
+.nav-links:hover {
   color: var(--accent1);
   transition: all 0.2s ease-out;
 }
@@ -114,7 +113,6 @@
   color: var(--mainbackground);
   text-decoration: none;
   font-weight: 300;
-  
 }
 
 .resumebutton:hover {
@@ -188,14 +186,14 @@
     visibility: hidden;
     transform: scaleX(0);
     transition: all 0.4s ease-in-out;
-}
+  }
 
   .nav-links:hover::before {
     visibility: visible;
     transform: scaleX(0);
-}
+  }
 
-.navbar {
+  .navbar {
     width: 100%;
   }
 
@@ -250,23 +248,50 @@
   #mobile-menu.is-active .bar:nth-child(3) {
     transform: translateY(-8px) rotate(-45deg);
   }
+
+  .banner {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .bannerInfo {
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+
+  .aidanImage {
+    width: 50%;
+    margin: 1rem 0 !important;
+  }
 }
 
-#navbar {
-  width: 100%;
-  background-color: var(--mainbackground);
-  position: fixed;
-  top: 0;
-  display: block;
-  transition: top 0.3s;
+.title {
+  margin: 1rem;
 }
 
 .subtitle {
   font-size: 1.6rem;
+  margin: 1rem;
 }
 
 .banner .subtitle span {
   color: var(--accent1);
   padding-bottom: 0.05rem;
   border-bottom: 1px solid var(--accent1);
+}
+
+.aidanImage {
+  border-radius: 50%;
+  margin: 0 0 0 2rem;
+}
+
+.bannerInfo {
+  text-align: center;
+  padding-top: 8rem;
+}
+
+.banner {
+  display: flex;
+  margin: 2rem 1rem 2rem;
+  justify-content: space-evenly;
 }
