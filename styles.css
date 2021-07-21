@@ -2,9 +2,10 @@
 
 :root {
   --mainbackground: #ffffff;
-  --accent1: #971d15;
+  --accent1: #d44d5c;
   --textcolor: rgb(0, 0, 0);
-  --lightred: #f9433dcc;
+  --accent2: #f9433dcc;
+  --navlinkshover: rgb(230, 230, 230);
 }
 
 * {
@@ -12,6 +13,18 @@
   margin: 0;
   padding: 0;
   font-family: "Roboto", sans-serif;
+}
+
+strong {
+  transition: transform 0.6s;
+  background: -webkit-linear-gradient(#971d15, var(--accent2));
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+strong:hover {
+  transform: scale(1.1);
 }
 
 .nav-container {
@@ -104,6 +117,8 @@
 .nav-links:hover {
   color: var(--accent1);
   transition: all 0.2s ease-out;
+  background-color: var(--navlinkshover);
+  border-radius: 0.15rem ;
 }
 
 .resumebutton {
@@ -281,9 +296,16 @@
 }
 
 .aidanImage {
+  transition: transform 0.6s;
   border-radius: 50%;
   margin: 0 0 0 2rem;
+  border: solid 0.5rem white
 }
+
+  .aidanImage:hover {
+    transform: scale(1.1);
+    border: solid 0.5rem var(--accent1)
+  }
 
 .bannerInfo {
   text-align: center;

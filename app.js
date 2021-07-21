@@ -22,7 +22,7 @@ window.onscroll = function () {
 // AOS
 AOS.init();
 
-// Typo
+// Typing Animation
 new TypeIt("#type1", {
   speed: 90,
   loop: true,
