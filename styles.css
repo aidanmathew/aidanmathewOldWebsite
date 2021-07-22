@@ -272,6 +272,7 @@ span:hover {
   .bannerInfo {
     text-align: center;
     margin-bottom: 1rem;
+    padding-top: 0 !important;
   }
 
   .aidanImage {
@@ -281,6 +282,14 @@ span:hover {
 
   .subtitle {
     margin-top: 1.5rem;
+  }
+
+  i {
+    font-size: 2rem !important
+  }
+
+  .social-links {
+  font-size: 1rem !important;
   }
 }
 
@@ -304,12 +313,13 @@ span:hover {
   transition: transform 0.6s;
   border-radius: 50%;
   margin: 0 0 0 -0.25rem;
-  border: solid 0.5rem white
+  border: solid 0.5rem var(--accent1)
 }
 
   .aidanImage:hover {
     transform: scale(1.1);
-    border: solid 0.5rem var(--accent2)
+    border: solid 0.5rem;
+    border-color: var(--accent2);
   }
 
 .bannerInfo {
@@ -321,4 +331,27 @@ span:hover {
   display: flex;
   margin: 2rem 2rem 2rem;
   justify-content: space-evenly;
+}
+
+.social-links {
+  margin-top: 2rem;
+  font-size: 1.25rem;
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+  list-style: none;
+  text-align: center;
+  color: var(--accent1);
+}
+
+i {
+  color: var(--accent1);
+  font-size: 3rem;
+  margin-top: 0.5rem;
+}
+
+.fa-spin-hover:hover {
+  -webkit-animation: fa-spin 2s linear;
+  -moz-animation: fa-spin 2s linear;
+  -o-animation: fa-spin 2s linear;
+  animation: fa-spin 2s linear;
 }
