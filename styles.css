@@ -15,7 +15,7 @@
   font-family: "Roboto", sans-serif;
 }
 
-strong {
+span {
   transition: transform 0.6s;
   background: -webkit-linear-gradient(var(--accent2), var(--accent1));
   background-clip: text;
@@ -23,7 +23,7 @@ strong {
   -webkit-text-fill-color: transparent;
 }
 
-strong:hover {
+span:hover {
   transform: scale(1.1);
 }
 
@@ -291,6 +291,7 @@ strong:hover {
 .subtitle {
   font-size: 1.6rem;
   margin: 1rem;
+  font-weight: 500;
 }
 
 .banner .subtitle span {
