@@ -23,6 +23,13 @@ span {
   -webkit-text-fill-color: transparent;
 }
 
+strong {
+  background: -webkit-linear-gradient(var(--accent2), var(--accent1));
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
 span:hover {
   transform: scale(1.1);
 }
@@ -50,7 +57,7 @@ span:hover {
   text-decoration: none;
   font-weight: 400;
   position: relative;
-  font-size: 1.75rem;
+  font-size: 1.5rem;
   justify-self: start;
   margin-left: 1rem;
   overflow: visible;
@@ -96,6 +103,7 @@ span:hover {
   font-weight: 300;
   position: relative;
 }
+
 .nav-links:before {
   content: "";
   position: absolute;
@@ -118,7 +126,7 @@ span:hover {
   color: var(--accent1);
   transition: all 0.2s ease-out;
   background-color: var(--navlinkshover);
-  border-radius: 0.15rem ;
+  border-radius: 0.15rem;
 }
 
 .resumebutton {
@@ -145,6 +153,88 @@ span:hover {
   margin: 5px auto;
   transition: all 0.3s ease-in-out;
   background: var(--textcolor);
+}
+
+.title {
+  font-size: 1.8rem;
+  margin: 0.5rem;
+}
+
+.subtitle {
+  font-size: 1.4rem;
+  margin-top: 1rem;
+  font-weight: 500;
+}
+
+.banner .subtitle span {
+  color: var(--accent1);
+  padding-bottom: 0.05rem;
+  border-bottom: 1px solid var(--accent1);
+}
+
+.aidanImage {
+  transition: transform 0.6s;
+  border-radius: 50%;
+  margin: 0 0 0 -0.25rem;
+  border: solid 0.5rem var(--accent1);
+}
+
+.aidanImage:hover {
+  transform: scale(1.1);
+  border: solid 0.5rem;
+  border-color: var(--accent2);
+}
+
+.bannerInfo {
+  text-align: center;
+  padding-top: 8rem;
+}
+
+.banner {
+  display: flex;
+  margin: 2rem 2rem 2rem;
+  justify-content: space-evenly;
+}
+
+.social-links {
+  margin-top: 2rem;
+  font-size: 1.25rem;
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+  list-style: none;
+  text-align: center;
+  color: var(--accent1);
+}
+
+i {
+  color: var(--accent1);
+  font-size: 3rem;
+  margin-top: 0.5rem;
+}
+
+.fa-spin-hover:hover {
+  -webkit-animation: fa-spin 2s linear;
+  -moz-animation: fa-spin 2s linear;
+  -o-animation: fa-spin 2s linear;
+  animation: fa-spin 2s linear;
+}
+
+@media screen and (max-width: 600px) {
+  .banner {
+    margin-left: 0rem;
+    margin-right: 0rem;
+    margin-top: 1rem;
+  }
+
+  .title {
+    font-size: 1.25rem !important ;
+    padding: 0 0;
+  }
+
+  .subtitle {
+    font-size: 1rem;
+    font-weight: 400;
+  }
 }
 
 @media screen and (max-width: 1200px) {
@@ -269,89 +359,31 @@ span:hover {
     align-items: center;
   }
 
+  .subtitle {
+    font-size: 1.2rem;
+  }
+
   .bannerInfo {
     text-align: center;
     margin-bottom: 1rem;
     padding-top: 0 !important;
   }
 
+  .title {
+    font-size: 1.8rem;
+  }
+
   .aidanImage {
-    width: 50%;
+    width: 50vw;
+    height: 50vw;
     margin: 1rem 0 !important;
   }
 
-  .subtitle {
-    margin-top: 1.5rem;
-  }
-
   i {
-    font-size: 2rem !important
+    font-size: 2rem !important;
   }
 
   .social-links {
-  font-size: 1rem !important;
+    font-size: 1rem !important;
   }
-}
-
-.title {
-  margin: 0.5rem;
-}
-
-.subtitle {
-  font-size: 1.6rem;
-  margin: 1rem;
-  font-weight: 500;
-}
-
-.banner .subtitle span {
-  color: var(--accent1);
-  padding-bottom: 0.05rem;
-  border-bottom: 1px solid var(--accent1);
-}
-
-.aidanImage {
-  transition: transform 0.6s;
-  border-radius: 50%;
-  margin: 0 0 0 -0.25rem;
-  border: solid 0.5rem var(--accent1)
-}
-
-  .aidanImage:hover {
-    transform: scale(1.1);
-    border: solid 0.5rem;
-    border-color: var(--accent2);
-  }
-
-.bannerInfo {
-  text-align: center;
-  padding-top: 8rem;
-}
-
-.banner {
-  display: flex;
-  margin: 2rem 2rem 2rem;
-  justify-content: space-evenly;
-}
-
-.social-links {
-  margin-top: 2rem;
-  font-size: 1.25rem;
-  display: grid;
-  grid-template-columns: repeat(4, auto);
-  list-style: none;
-  text-align: center;
-  color: var(--accent1);
-}
-
-i {
-  color: var(--accent1);
-  font-size: 3rem;
-  margin-top: 0.5rem;
-}
-
-.fa-spin-hover:hover {
-  -webkit-animation: fa-spin 2s linear;
-  -moz-animation: fa-spin 2s linear;
-  -o-animation: fa-spin 2s linear;
-  animation: fa-spin 2s linear;
 }

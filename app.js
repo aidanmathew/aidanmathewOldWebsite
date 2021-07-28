@@ -7,18 +7,6 @@ menu.addEventListener("click", function () {
   menuLinks.classList.toggle("active");
 });
 
-// Hides the navbar when scrolling
-var prevScrollpos = window.pageYOffset;
-window.onscroll = function () {
-  var currentScrollPos = window.pageYOffset;
-  if (prevScrollpos > currentScrollPos) {
-    document.getElementById("navbar").style.top = "0";
-  } else {
-    document.getElementById("navbar").style.top = "-5rem";
-  }
-  prevScrollpos = currentScrollPos;
-};
-
 // AOS
 AOS.init();
 
@@ -28,7 +16,7 @@ new TypeIt("#type1", {
   loop: true,
   waitUntilVisible: true,
 })
-  .type("a Computer Engineering Student.", { delay: 400 })
+  .type("a Computer Engineer.", { delay: 400 })
   .pause(1000)
   .delete()
   .type("a Web Developer.", { delay: 400 })
