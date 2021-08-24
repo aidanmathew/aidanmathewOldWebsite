@@ -1,10 +1,17 @@
+window.addEventListener("resize", function () {
+  "use strict";
+  window.location.reload();
+});
+
 // Mobile Menu -> Hamburger
 const menu = document.querySelector("#mobile-menu");
 const menuLinks = document.querySelector(".nav-menu");
+const subtitle = document.querySelector("#type1");
 
 menu.addEventListener("click", function () {
   menu.classList.toggle("is-active");
   menuLinks.classList.toggle("active");
+  subtitle.classList.toggle("hide")
 });
 
 // AOS

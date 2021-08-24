@@ -1,11 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap");
 
 :root {
-  --mainbackground: #ffffff;
+  --mainbackground: rgba(255, 255, 255, 0.9);
   --accent1: #971d15;
   --textcolor: rgb(0, 0, 0);
   --accent2: #f9433dcc;
-  --navlinkshover: rgb(230, 230, 230);
+  --navlinkshover: rgb(221, 221, 221);
 }
 
 * {
@@ -50,6 +50,12 @@ span:hover {
   width: 90%;
   max-width: 1720px;
   margin: 0 auto;
+}
+
+.navbar-container {
+  position: fixed;
+  top: 0;
+  width: 100%;
 }
 
 .name {
@@ -192,7 +198,7 @@ span:hover {
 
 .banner {
   display: flex;
-  margin: 2rem 2rem 2rem;
+  margin: 6rem 2rem 2rem;
   justify-content: space-evenly;
 }
 
@@ -206,17 +212,40 @@ span:hover {
   color: var(--accent1);
 }
 
+.social:hover {
+  color: var(--accent2);
+}
+
+.social:hover .fa-spin-hover,
+.fa-spin-hover:hover {
+  color: var(--accent2);
+  -webkit-animation: fa-spin 2s linear;
+  -moz-animation: fa-spin 2s linear;
+  -o-animation: fa-spin 2s linear;
+  animation: fa-spin 2s linear;
+}
+
 i {
   color: var(--accent1);
   font-size: 3rem;
   margin-top: 0.5rem;
 }
 
-.fa-spin-hover:hover {
-  -webkit-animation: fa-spin 2s linear;
-  -moz-animation: fa-spin 2s linear;
-  -o-animation: fa-spin 2s linear;
-  animation: fa-spin 2s linear;
+.introduction {
+  width: 100%;
+}
+
+.parallax {
+  background: url("media/introductionbackground.jpg") no-repeat center;
+  background-color: rgb(255, 255, 255);
+  background-size: cover;
+  background-attachment: fixed;
+  height: 40rem;
+  border: var(--accent1) solid 0.5rem;
+}
+
+.hide {
+  display: none;
 }
 
 @media screen and (max-width: 600px) {
@@ -253,11 +282,11 @@ i {
     left: -100%;
     opacity: 0;
     transition: all 0.5s ease;
-    z-index: 50;
+    z-index: 1000;
   }
 
   .nav-menu.active {
-    background: var(--mainbackground);
+    background: rgba(255, 255, 255, 1);
     left: 0;
     opacity: 1;
     transition: all 0.5s ease;
@@ -367,6 +396,7 @@ i {
     text-align: center;
     margin-bottom: 1rem;
     padding-top: 0 !important;
+    margin-top: 5rem;
   }
 
   .title {
