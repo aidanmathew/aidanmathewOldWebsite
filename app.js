@@ -1,7 +1,9 @@
-window.addEventListener("resize", function () {
-  "use strict";
-  window.location.reload();
-});
+// window.addEventListener("resize", function () {
+//   this.setTimeout(function(){
+//     "use strict";
+//     window.location.reload();
+//   }, 3000);
+// });
 
 // Mobile Menu -> Hamburger
 const menu = document.querySelector("#mobile-menu");
